@@ -1,0 +1,29 @@
+﻿<Window x:Class="Absolut.View.TestReport"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Absolut.View"
+        mc:Ignorable="d"
+        Title="Создание отчета" Height="300" Width="300">
+
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="15" />
+        </Style>
+    </Window.Resources>
+    
+    <Grid Margin="10">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Button Content="Создать отчет для компании" Margin="0 0 0 5" 
+                Command="{Binding CreateRepComp}"/>
+        <Button Content="Создать отчет для сферы деятельности" Grid.Row="1" Margin="0 5 0 0" 
+                Command="{Binding CreateRepAct}"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="View\Activities.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Companies.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\ControlExpInc.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\ExpenseHistory.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\HelperAdmin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\HelperUser.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\HistoryExpAct.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\HistoryIncAct.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\IncomeHistory.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\MainMenu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\MenuActivity.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\TestReport.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\Activities.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Companies.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ControlExpInc.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ExpenseHistory.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\HelperAdmin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\HelperUser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\HistoryExpAct.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\HistoryIncAct.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\IncomeHistory.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MainMenu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MenuActivity.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\TestReport.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Pairs\\Not_Actual_Pairs\\Practica TRPO\\Absolut\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FF4429E9-4690-4F61-AFCC-455F75640B54}|Absolut.csproj|d:\\pairs\\not_actual_pairs\\practica trpo\\absolut\\viewmodel\\vmmainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF4429E9-4690-4F61-AFCC-455F75640B54}|Absolut.csproj|solutionrelative:viewmodel\\vmmainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF4429E9-4690-4F61-AFCC-455F75640B54}|Absolut.csproj|d:\\pairs\\not_actual_pairs\\practica trpo\\absolut\\viewmodel\\idialogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF4429E9-4690-4F61-AFCC-455F75640B54}|Absolut.csproj|solutionrelative:viewmodel\\idialogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF4429E9-4690-4F61-AFCC-455F75640B54}|Absolut.csproj|d:\\pairs\\not_actual_pairs\\practica trpo\\absolut\\viewmodel\\checkiswinopen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF4429E9-4690-4F61-AFCC-455F75640B54}|Absolut.csproj|solutionrelative:viewmodel\\checkiswinopen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF4429E9-4690-4F61-AFCC-455F75640B54}|Absolut.csproj|d:\\pairs\\not_actual_pairs\\practica trpo\\absolut\\viewmodel\\vmreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF4429E9-4690-4F61-AFCC-455F75640B54}|Absolut.csproj|solutionrelative:viewmodel\\vmreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF4429E9-4690-4F61-AFCC-455F75640B54}|Absolut.csproj|d:\\pairs\\not_actual_pairs\\practica trpo\\absolut\\view\\menuactivity.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FF4429E9-4690-4F61-AFCC-455F75640B54}|Absolut.csproj|solutionrelative:view\\menuactivity.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF4429E9-4690-4F61-AFCC-455F75640B54}|Absolut.csproj|d:\\pairs\\not_actual_pairs\\practica trpo\\absolut\\view\\companies.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF4429E9-4690-4F61-AFCC-455F75640B54}|Absolut.csproj|solutionrelative:view\\companies.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF4429E9-4690-4F61-AFCC-455F75640B54}|Absolut.csproj|d:\\pairs\\not_actual_pairs\\practica trpo\\absolut\\view\\testreport.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF4429E9-4690-4F61-AFCC-455F75640B54}|Absolut.csproj|solutionrelative:view\\testreport.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF4429E9-4690-4F61-AFCC-455F75640B54}|Absolut.csproj|d:\\pairs\\not_actual_pairs\\practica trpo\\absolut\\view\\testreport.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FF4429E9-4690-4F61-AFCC-455F75640B54}|Absolut.csproj|solutionrelative:view\\testreport.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VMMainWindow.cs",
+              "DocumentMoniker": "D:\\Pairs\\Not_Actual_Pairs\\Practica TRPO\\Absolut\\ViewModel\\VMMainWindow.cs",
+              "RelativeDocumentMoniker": "ViewModel\\VMMainWindow.cs",
+              "ToolTip": "D:\\Pairs\\Not_Actual_Pairs\\Practica TRPO\\Absolut\\ViewModel\\VMMainWindow.cs",
+              "RelativeToolTip": "ViewModel\\VMMainWindow.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T16:13:12.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IDialogService.cs",
+              "DocumentMoniker": "D:\\Pairs\\Not_Actual_Pairs\\Practica TRPO\\Absolut\\ViewModel\\IDialogService.cs",
+              "RelativeDocumentMoniker": "ViewModel\\IDialogService.cs",
+              "ToolTip": "D:\\Pairs\\Not_Actual_Pairs\\Practica TRPO\\Absolut\\ViewModel\\IDialogService.cs",
+              "RelativeToolTip": "ViewModel\\IDialogService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T16:12:56.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CheckIsWinOpen.cs",
+              "DocumentMoniker": "D:\\Pairs\\Not_Actual_Pairs\\Practica TRPO\\Absolut\\ViewModel\\CheckIsWinOpen.cs",
+              "RelativeDocumentMoniker": "ViewModel\\CheckIsWinOpen.cs",
+              "ToolTip": "D:\\Pairs\\Not_Actual_Pairs\\Practica TRPO\\Absolut\\ViewModel\\CheckIsWinOpen.cs",
+              "RelativeToolTip": "ViewModel\\CheckIsWinOpen.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T16:12:51.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Companies.xaml.cs",
+              "DocumentMoniker": "D:\\Pairs\\Not_Actual_Pairs\\Practica TRPO\\Absolut\\View\\Companies.xaml.cs",
+              "RelativeDocumentMoniker": "View\\Companies.xaml.cs",
+              "ToolTip": "D:\\Pairs\\Not_Actual_Pairs\\Practica TRPO\\Absolut\\View\\Companies.xaml.cs",
+              "RelativeToolTip": "View\\Companies.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T11:31:29.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MenuActivity.xaml",
+              "DocumentMoniker": "D:\\Pairs\\Not_Actual_Pairs\\Practica TRPO\\Absolut\\View\\MenuActivity.xaml",
+              "RelativeDocumentMoniker": "View\\MenuActivity.xaml",
+              "ToolTip": "D:\\Pairs\\Not_Actual_Pairs\\Practica TRPO\\Absolut\\View\\MenuActivity.xaml",
+              "RelativeToolTip": "View\\MenuActivity.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-08T06:13:03.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VMReport.cs",
+              "DocumentMoniker": "D:\\Pairs\\Not_Actual_Pairs\\Practica TRPO\\Absolut\\ViewModel\\VMReport.cs",
+              "RelativeDocumentMoniker": "ViewModel\\VMReport.cs",
+              "ToolTip": "D:\\Pairs\\Not_Actual_Pairs\\Practica TRPO\\Absolut\\ViewModel\\VMReport.cs",
+              "RelativeToolTip": "ViewModel\\VMReport.cs",
+              "ViewState": "AQIAAHwAAAAAAAAAAAAcwIMAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T06:06:08.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TestReport.xaml.cs",
+              "DocumentMoniker": "D:\\Pairs\\Not_Actual_Pairs\\Practica TRPO\\Absolut\\View\\TestReport.xaml.cs",
+              "RelativeDocumentMoniker": "View\\TestReport.xaml.cs",
+              "ToolTip": "D:\\Pairs\\Not_Actual_Pairs\\Practica TRPO\\Absolut\\View\\TestReport.xaml.cs",
+              "RelativeToolTip": "View\\TestReport.xaml.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T06:05:59.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TestReport.xaml",
+              "DocumentMoniker": "D:\\Pairs\\Not_Actual_Pairs\\Practica TRPO\\Absolut\\View\\TestReport.xaml",
+              "RelativeDocumentMoniker": "View\\TestReport.xaml",
+              "ToolTip": "D:\\Pairs\\Not_Actual_Pairs\\Practica TRPO\\Absolut\\View\\TestReport.xaml",
+              "RelativeToolTip": "View\\TestReport.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-08T06:05:58.426Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+﻿<Window x:Class="Absolut.View.ControlExpInc"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Absolut.View"
+        mc:Ignorable="d"
+        Title="Добавление значений" Height="550" Width="1100"
+        WindowStartupLocation="CenterOwner" Loaded="Open" Closing="Closed">
+
+    <Window.Resources>
+        
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="FontWeight" Value="Bold" />
+        </Style>
+
+        <Style TargetType="RadioButton">
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+        </Style>
+
+        <Style x:Key="MainBttns">
+            <Setter Property="ItemsControl.FontSize" Value="20" />
+            <Setter Property="ItemsControl.VerticalAlignment" Value="Top" />
+            <Setter Property="ItemsControl.Height" Value="50" />
+            <Setter Property="ItemsControl.Margin" Value="0 0 5 0" />
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="BorderThickness" Value="3" />
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="FontWeight" Value="DemiBold" />
+        </Style>
+
+        <Style TargetType="DatePicker">
+            <Setter Property="DisplayDateStart" Value="01/01/1900" />
+            <Setter Property="IsTodayHighlighted" Value="True" />
+            <Setter Property="FirstDayOfWeek" Value="Monday" />
+        </Style>
+    </Window.Resources>
+    
+    <Grid Margin="10">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <RadioButton Content="{Binding TextAddComp}"
+                         Command="{Binding AddValueComp}"/>
+            <RadioButton Content="{Binding TextAddAct}" 
+                         Command="{Binding AddValueAct}"/>
+        </StackPanel>
+
+        <Border Grid.Row="1">
+
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Button Style="{StaticResource MainBttns}" Content="Добавить счет" 
+                        Command="{Binding OpenAddAccount}"/>
+                <Button Style="{StaticResource MainBttns}" Content="Добавить доходы" Grid.Column="1" 
+                        Command="{Binding OpenAddIncome}"/>
+                <Button Style="{StaticResource MainBttns}" Content="Добавить расходы" Grid.Column="2" 
+                        Command="{Binding OpenAddExpense}"/>
+
+                <Border VerticalAlignment="Stretch" BorderBrush="Black" BorderThickness="2" Margin="0 60 5 0" x:Name="AddAccount">
+                    <StackPanel Margin="3 10 3 0">
+                        <TextBlock Text="Добавить Счет"/>
+                        <TextBox Text="{Binding InputAccount, UpdateSourceTrigger=PropertyChanged}" Margin="0 5" />
+                        <Button Content="Добавить" 
+                                Command="{Binding AddAccount}"/>
+                    </StackPanel>
+                </Border>
+
+                <Border VerticalAlignment="Stretch" BorderBrush="Black" BorderThickness="2" Grid.Column="1" Margin="0 60 5 0" x:Name="AddIncome">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Width="Auto" Grid.Column="0" Margin="5 10 5 0">
+                            <TextBlock Text="Доход"/>
+                            <TextBox Text="{Binding InputIncome, UpdateSourceTrigger=PropertyChanged}" Margin="0 5" />
+                        </StackPanel>
+
+                        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Grid.ColumnSpan="2" Margin="0 90 0 0" MinWidth="350">
+                            <TextBlock Text="Дата получения дохода" />
+                            <DatePicker SelectedDate="{Binding DateIncome}" />
+                        </StackPanel>
+                        
+
+                        <StackPanel Width="Auto" Grid.Column="1" Margin="5 10 5 0">
+                            <TextBlock Text="Описание" />
+                            <TextBox Text="{Binding InputIncCom, UpdateSourceTrigger=PropertyChanged}" Margin="0 5" />
+                        </StackPanel>
+
+                        <Button Content="Добавить информацию о доходе" Grid.ColumnSpan="2" Height="60" VerticalAlignment="Bottom" FontSize="20" FontWeight="DemiBold" Margin="5"
+                                Command="{Binding AddInfoIncome}"/>
+                    </Grid>
+                </Border>
+
+                <Border VerticalAlignment="Stretch" BorderBrush="Black" BorderThickness="2" Grid.Column="2" Margin="0 60 5 0" x:Name="AddExpense">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Width="Auto" Grid.Column="0" Margin="5 10 5 0">
+                            <TextBlock Text="Расход"/>
+                            <TextBox Text="{Binding InputExpense, UpdateSourceTrigger=PropertyChanged}" Margin="0 5" />
+                        </StackPanel>
+
+                        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Grid.ColumnSpan="2" Margin="0 95 0 0" MinWidth="350">
+                            <TextBlock Text="Дата расхода" />
+                            <DatePicker SelectedDate="{Binding DateExpense}" />
+                        </StackPanel>
+
+
+                        <StackPanel Width="Auto" Grid.Column="1" Margin="5 10 5 0">
+                            <TextBlock Text="Описание" />
+                            <TextBox Text="{Binding InputExpCom, UpdateSourceTrigger=PropertyChanged}" Margin="0 5" />
+                        </StackPanel>
+
+                        <Button Content="Добавить информацию о расходе" Grid.ColumnSpan="2" Height="60" VerticalAlignment="Bottom" FontSize="20" FontWeight="DemiBold" Margin="5"
+                                Command="{Binding AddInfoExpense}"/>
+                    </Grid>
+                </Border>
+            </Grid>
+        </Border>
+
+    </Grid>
+</Window>

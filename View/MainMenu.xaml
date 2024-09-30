@@ -1,0 +1,102 @@
+﻿<Window x:Class="Absolut.View.MainMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Absolut.View"
+        mc:Ignorable="d"
+        Title="Absolut" Height="450" Width="700"
+        WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="FontFamily" Value="Arial" />
+        </Style>
+    </Window.Resources>
+    
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Menu VerticalAlignment="Top" Grid.Row="0" Grid.ColumnSpan="2" >
+            <MenuItem Header="Счет">
+                <MenuItem Header="Добавить счет" 
+                          Command="{Binding AddCompany}"/>
+                <MenuItem Header="Добавить отдельный счет" 
+                          Command="{Binding AddActive}"/>
+                <MenuItem Header="Добавить значения" 
+                          Command="{Binding AddValues}"/>
+                <MenuItem Header="Создать отчет" 
+                          Command="{Binding CreateRep}"/>
+            </MenuItem>
+
+            <MenuItem Header="Аккаунт" HorizontalAlignment="Right">
+                <MenuItem Header="Выход" 
+                          Command="{Binding Exit}"/>
+            </MenuItem>
+
+            <MenuItem Header="Помощь">
+                <MenuItem Header="Справочка" 
+              Command="{Binding OpenHelpUser}"/>
+                <MenuItem Header="Справочка для Администратора" 
+              Command="{Binding OpenHelpAdm}"/>
+            </MenuItem>
+        </Menu>
+
+        <Border Grid.Row="1" Background="LightGray" Grid.ColumnSpan="2">
+            <TextBlock Text="{Binding Model.NameCompany}" d:Text="Company Name" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1" Margin="10" FontSize="18" FontWeight="Bold" />
+        </Border>
+
+        <Border HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Height="100" BorderBrush="Black" BorderThickness="2" Background="Black" CornerRadius="20" Grid.Row="2" Margin="0 10 0 0" Grid.ColumnSpan="2" >
+            <StackPanel VerticalAlignment="Stretch" Margin="5" >
+                <TextBlock Text="Счет" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" Foreground="White" />
+                <TextBlock Text="{Binding FormatAccount, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" d:Text="55 999$" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Margin="0 10" Foreground="White" />
+            </StackPanel>
+        </Border>
+
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="Последняя история доходов" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" Margin="0 5 0 0" />
+            <TextBlock Text="Последняя история расходов" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" Margin="0 5 0 0" />
+
+            <ListBox Grid.Row="1" BorderThickness="2" ItemsSource="{Binding Model.HistoryIncome}" Margin="5" MouseDoubleClick="ToHistoryIncome">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Value}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+
+            <ListBox Grid.Row="1" Grid.Column="1" BorderThickness="2" ItemsSource="{Binding Model.HistoryExpense}" Margin="5" MouseDoubleClick="ToHistoryExpense">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Value}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Grid>
+
+        <TextBlock Grid.Row="5" Text="{Binding Title}" d:Text="Администратор" HorizontalAlignment="Center" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
